@@ -89,7 +89,8 @@ namespace BruTile.Cache
 
         private string GetFileName(TileIndex index)
         {
-            return string.Format("{0}\\{1:00}\\{2:00}x{3:00}.{4}", _directory, index.Level, index.Col, index.Row, _format);
+            var result = $"{_directory}\\{index.Level:00}\\{index.Col:00}x{index.Row:00}.{_format}";
+            return result;
         }
 
         private string GetDirectoryName(TileIndex index)
