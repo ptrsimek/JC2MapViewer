@@ -14,4 +14,10 @@
     <ProjectReference Include="..\JC2Save\JC2.Save.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Tiles\**\*.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
